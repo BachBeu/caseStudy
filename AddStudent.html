@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+    <style>
+        input{
+            float: left;
+            width: 330px;
+        }
+    </style>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div>
+    <center>
+        <img src="Images/logo.png" width="800px", height="140px">
+        <hr>
+    </center>
+    <div>
+        <ul>
+            <li><a class="active" href="AddStudent.html">Home</a></li>
+            <li><a href=AddStudent.html>Student Management</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+</div>
+<div>
+    <div style="float: left; width: 400px">
+        <h2>Add Student</h2>
+        <form>
+            <fieldset style="width: 330px">
+                <legend>Add Student</legend>
+                <label>Student ID: </label><br>
+                <input type="text" id="studentId" name="student id" placeholder="Please Enter the Student ID"><br>
+                <hr>
+                <label>Name: </label><br>
+                <input type="text" id="studentName" name="name" placeholder="Please Enter the Name"><br>
+                <hr>
+                <label>Email: </label><br>
+                <input type="text" id="studentEmail" name="email" placeholder="Please Enter the Email"><br>
+                <hr>
+                <label>Phone: </label><br>
+                <input type="text" id="studentPhone" name="phone" placeholder="Please Enter the Phone"><br>
+                <hr>
+                <label>Address: </label><br>
+                <input type="text" id="studentAddress" name="address" placeholder="Please Enter the Address"><br>
+                <hr>
+                <div style="height: 50px">
+                    <label>Select image to upload:</label><br>
+                    <input type="File" name="fileToUpload" id="fTL" style="float: left; width: 300px">
+                </div>
+                <hr>
+                <center>
+                    <button id="btnAdd" type="button" value="Add" onclick="addStudent()">submit</button>
+                </center>
+            </fieldset>
+        </form>
+    </div>
+    <div style="float: left; width: 900px">
+        <h2>Display all Student</h2>
+        <table border="1px" style="width: 900px"  id="pageMStudent">
+            <thead>
+            <tr>
+                <th>No</th>
+                <th>Student ID</th>
+                <th width="150px">Student Name</th>
+                <th width="200px">Email</th>
+                <th width="140px">Phone</th>
+                <th width="200px">Address</th>
+                <th width="200px">Images</th>
+                <th width="60px">Edit</th>
+                <th width="60px">Delete</th>
+            </tr>
+            </thead>
+            <tbody id="detailList">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>
