@@ -43,10 +43,10 @@ function addStudent() {
         "studentAddress" : stuAddress,
         "fTL" : fTU,
     };
-    validateId(stuId);
+/*    validateId(stuId);
     validateName(stuName);
     validateEmail(stuEmail);
-    validatePhone(stuPhone);
+    validatePhone(stuPhone);*/
     if(curIndex == -1){//chỉ số hiện tại
         add(student);
     }else{
